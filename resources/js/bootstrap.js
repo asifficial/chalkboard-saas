@@ -1,4 +1,5 @@
-import axios from 'axios';
-window.axios = axios;
+window.Chalkboard = {};
 
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.Chalkboard.log = function (...args) {
+    console.log("[Chalkboard]", ...args);
+};
